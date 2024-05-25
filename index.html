@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -12,36 +13,41 @@
     <title>TaR Translator</title>
   </head>
   <body>
-    <div class="container">
-      <div class="wrapper">
-        <div class="text-input">
-          <textarea class="from-text" placeholder="Enter text"></textarea>
-          <textarea
-            class="to-text"
-            placeholder="Translation"
-            readonly
-            disabled
-          ></textarea>
+    <header>
+      <h1>Tar Translator</h1>
+    </header>
+    <div class="big-container">
+      <div class="container">
+        <div class="wrapper">
+          <div class="text-input">
+            <textarea class="from-text" placeholder="Enter text"></textarea>
+            <textarea
+              class="to-text"
+              placeholder="Translation"
+              readonly
+              disabled
+            ></textarea>
+          </div>
+          <ul class="controls">
+            <li class="row from">
+              <div class="icons">
+                <i id="from" class="fas fa-volume-up"></i>
+                <i id="from" class="fas fa-copy"></i>
+              </div>
+              <select id="from"></select>
+            </li>
+            <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
+            <li class="row to">
+              <select id="to"></select>
+              <div class="icons">
+                <i id="to" class="fas fa-volume-up"></i>
+                <i id="to" class="fas fa-copy"></i>
+              </div>
+            </li>
+          </ul>
         </div>
-        <ul class="controls">
-          <li class="row from">
-            <div class="icons">
-              <i id="from" class="fas fa-volume-up"></i>
-              <i id="from" class="fas fa-copy"></i>
-            </div>
-            <select id="from"></select>
-          </li>
-          <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
-          <li class="row to">
-            <select id="to"></select>
-            <div class="icons">
-              <i id="to" class="fas fa-volume-up"></i>
-              <i id="to" class="fas fa-copy"></i>
-            </div>
-          </li>
-        </ul>
+        <button>Translate Text</button>
       </div>
-      <button>Translate Text</button>
     </div>
   </body>
   <script src="js/countries.js"></script>

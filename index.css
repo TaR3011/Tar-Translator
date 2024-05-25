@@ -7,17 +7,24 @@
 }
 
 body {
+  min-height: 100vh;
+  background-color: #255957;
+  text-align: center;
+  padding-top: 24px;
+  color: #e5e5e5;
+}
+
+.big-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  margin-top: 48px;
   background-color: #255957;
 }
 
 .container {
   width: 50%;
   background-color: #e5e5e5;
-
   border-radius: 12px;
   padding: 30px;
 }
