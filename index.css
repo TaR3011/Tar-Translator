@@ -118,3 +118,83 @@ li,
   border-radius: 5px;
   background-color: #255957;
 }
+
+@media (max-width: 1024px) {
+  .container {
+    width: 70%;
+  }
+
+  .text-input textarea {
+    font-size: 16px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .text-input textarea {
+    font-size: 14px;
+    height: 180px;
+  }
+
+  .controls .icons i {
+    font-size: 12px;
+  }
+
+  .controls .exchange {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+  }
+
+  .text-input {
+    flex-direction: column;
+  }
+
+  .text-input .to-text {
+    border-left: none;
+    border-top: 1px solid #bbb;
+  }
+
+  .text-input textarea {
+    height: 150px;
+    font-size: 12px;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .controls .row.from,
+  .controls .row.to {
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .controls .icons {
+    width: 50%;
+  }
+
+  .controls .exchange {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  .controls .row select {
+    width: 50%;
+  }
+
+  .container button {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
